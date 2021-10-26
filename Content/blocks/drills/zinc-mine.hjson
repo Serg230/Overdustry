@@ -1,0 +1,40 @@
+name: Zinc Mine
+description: Extracts zinc from zinc-containing ores. Requires water to function.
+type: GenericCrafter
+category: production
+health: 140
+size: 2
+
+research: laser-drill
+researchCostMultiplier: 0.7
+
+liquidCapacity: 20
+hasPower: true
+
+drawer: DrawRotator
+updateEffect: smeltsmoke
+updateEffectChance: 0.12
+
+requirements: [
+    copper/160
+    graphite/70
+    silicon/50
+    titanium/80
+    thorium/20
+]
+
+consumes: {
+  power: 2.6
+  items: {
+  items: [
+  coal/2
+  ]
+  }
+  liquid:{
+    liquid: water
+    amount: 0.05
+  }
+}
+
+craftTime: 90
+outputItem: zinc/2

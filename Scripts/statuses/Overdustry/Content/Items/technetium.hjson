@@ -1,0 +1,14 @@
+name: Technetium
+description: потом напишу
+details: "Takes in heat quite effectively. Perhapse this could be used to set things on fire."
+cost: 1
+research: {
+  parent: thorium
+  requirements:[
+  thorium/1000
+  titanium/2500
+  ]
+}
+color: 8194b8
+lowPriority: true
+radioactivity: 2.4

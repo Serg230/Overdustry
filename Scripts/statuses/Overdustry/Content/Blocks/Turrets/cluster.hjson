@@ -1,0 +1,95 @@
+type: ItemTurret
+name: Cluster
+description: Advanced artillery turret.
+health: 3050
+size: 4
+category: turret
+research: ripple
+
+range: 580
+minRange: 70
+targetAir: false
+targetGround: true
+consumes: {
+power: 2
+}
+coolantUsage: 0.5
+coolantMultiplier: 1
+reloadTime: 240
+inaccuracy: 1.5
+
+shots: 3
+ammoEjectBack: 5
+cooldown: 0.5
+ammoPerShot: 4
+maxAmmo: 32
+
+recoilAmount: 2
+heatColor: "a16e10"
+shootSound: artillery
+
+ammoTypes: {
+  pyratite: {
+    type: ArtilleryBulletType
+    speed: 2
+    hitEffect: blastExplosion
+    knockback: 0.8
+    lifetime: 300
+    width: 13
+    height: 13
+    collidesTiles: false
+    splashDamageRadius: 35
+    splashDamage: 155
+    status: burning
+    homingPower: 0.1
+    backColor: e89c46
+    frontColor: ff8700
+    trailEffect: incendTrail
+  }
+  blast-compound: {
+    type: ArtilleryBulletType
+    speed: 2
+    hitEffect: blastExplosion
+    knockback: 2
+    lifetime: 300
+    width: 14
+    height: 14
+    collidesTiles: false
+    splashDamageRadius: 50
+    splashDamage: 180
+    status: blasted
+    statusDuration: 120
+    homingPower: 0.1
+    backColor: ee8573
+    frontColor: ffdfd1
+  }
+  surge-alloy: {
+    type: ArtilleryBulletType
+    speed: 2.25
+    hitEffect: plasticExplosion
+    knockback: 1
+    lifetime: 300
+    width: 15
+    height: 15
+    collidesTiles: false
+    splashDamageRadius: 40
+    splashDamage: 200
+    ammoMultiplier: 2
+    status: shocked
+    statusDuration: 120
+    lightning: 2
+    lightningLength: 10
+    lightningDamage: 25
+    homingPower: 0.1
+    frontColor: FFF484
+    backColor: F3E979
+  }
+}
+
+requirements: [
+  copper/250
+  silicon/240
+  zinc/200
+  plastanium/150
+  surge-alloy/100
+]

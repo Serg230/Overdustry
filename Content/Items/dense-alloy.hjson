@@ -1,0 +1,10 @@
+name: Dense Alloy
+description: Used in turret ammunition and defence structures.
+research: cryofluid
+
+flammability: 0.1
+charge: 0.1
+
+radioactivity: 2.4
+
+color: 8194b8

@@ -1,0 +1,43 @@
+type: MendProjector
+name: Mending Dome
+Description: Advanced mending projector. Heals blocks fast and in large radius, but requires water to operate. Optionally uses phase fabric and technetium to boost range and efficiency.
+health: 900
+size: 3
+category: effect
+research: overdrive-projector
+
+range: 200
+healPercent: 20
+phaseBoost: 20
+phaseRangeBoost: 120
+
+hasItems: True
+itemCapacity: 10
+useTime: 240
+
+baseColor: 84f490
+phaseColor: b5ffbd
+
+consumes:{
+	power: 5
+    liquid: {
+        liquid: water
+        amount: 0.1
+  } 
+  	items: {
+  		booster: True
+		optional: True
+    	items: [
+        	phase-fabric/1
+            technetium/1
+        ]
+    }
+}
+
+requirements: [
+  titanium/170
+  silicon/120
+  phase-fabric/120
+  technetium/50
+  surge-alloy/35
+]

@@ -1,0 +1,13 @@
+type: Wall
+name: Large Technetium Wall
+health: 2800
+description: Projects structures from enemy projectiles. Absorb laser and electric arcs.
+requirements:
+[
+    plastanium/24
+    technetium/8
+]
+size: 2
+category: defense
+insulated: true
+absorbLasers: true

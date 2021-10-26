@@ -1,0 +1,33 @@
+type: LiquidConverter
+description: Use electrolysis to make bromine from water
+category: crafting
+hasLiquids: true
+hasItems: false
+size: 2
+health: 320
+liquidCapacity: 30
+research: cryofluid-mixer
+
+updateEffect: magmasmoke
+
+requirements: [
+  copper/90
+  titanium/55
+  graphite/70
+  silicon/15
+  metaglass/25
+]
+
+consumes: {
+  power: 1.5
+  liquid: {
+    liquid: water
+    amount: 0.1
+  }
+}
+craftTime: 60
+
+outputLiquid: {
+  liquid: bromine
+  amount: 0.05
+}

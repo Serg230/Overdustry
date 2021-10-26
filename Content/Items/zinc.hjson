@@ -1,0 +1,8 @@
+name: Zinc
+description: Used in structures building and turret ammunition.
+research: titanium
+
+hardness: 5
+cost: 1.15
+
+color: c5edfa
