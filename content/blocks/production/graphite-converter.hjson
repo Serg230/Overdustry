@@ -1,0 +1,34 @@
+type: GenericCrafter
+name: Graphite Converter
+description: Press spore pods under high pressure and temperature to make graphite. Uses bromine as catalysts.
+category: crafting
+research: multi-press
+size: 3
+itemCapacity: 20
+health: 400
+
+drawer: DrawGlow
+craftEffect: smeltsmoke
+
+requirements: [
+graphite/100
+titanium/70
+silicon/50
+plastanium/30
+]
+
+consumes: {
+power: 5
+items: {
+  items: [
+    spore-pod/1
+  ]
+}
+liquid: {
+  liquid: bromine
+  amount: 0.05
+  }
+}
+craftTime: 20
+
+outputItem: graphite/2

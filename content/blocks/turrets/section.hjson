@@ -1,0 +1,27 @@
+type: PointDefenseTurret
+name: Section
+description: Advanced version of Segment turret. Has much more radius, but lower rate of fire and requires cryofluid to operate. Damage to bullets: 100 (Sergment: 16)
+category: turret
+size: 3
+health: 750
+research: segment
+hasLiquids: true
+
+reloadTime: 40
+bulletDamage: 100
+range: 300
+
+consumes: {
+power: 15
+  liquid: {
+    liquid: cryofluid
+    amount: 0.2
+  }
+}
+
+
+requirements: [
+  copper/70
+  lead/50
+  silicon/30
+]

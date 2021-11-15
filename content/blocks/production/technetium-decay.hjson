@@ -1,0 +1,34 @@
+name: Technetium Production Reactor
+type: GenericCrafter
+description: Transforming thorium to technetium through radioactive decay. Generates power in process.
+category: crafting
+research: phase-weaver
+size: 3
+itemCapacity: 20
+health: 400
+
+drawer: DrawGlow
+craftEffect: smeltsmoke
+
+requirements: [
+silicon/100
+zinc/70
+plastanium/30
+phase-fabric/15
+]
+
+consumes: {
+power: 4
+items: {
+  items: [
+    thorium/3
+  ]
+}
+liquid: {
+  liquid: bromine
+  amount: 0.1
+  }
+}
+craftTime: 120
+
+outputItem: technetium/1

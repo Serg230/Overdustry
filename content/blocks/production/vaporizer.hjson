@@ -1,0 +1,36 @@
+name: Vaporizer
+description: Evaporates water. Gives sand remains after evaporation.
+type: GenericCrafter
+category: crafting
+size: 1
+health: 120
+research: melter
+
+hasPower: true
+hasLiquids: true
+hasItems: true
+
+updateEffect: smeltsmoke
+drawer: {
+type: DrawGlow
+glowAmount: 3
+glowScale: 0
+}
+ambientSound: smelter
+ambientSoundVolume: 0.3
+
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+  power: 2
+}
+craftTime: 120
+outputItem: sand/2
+
+requirements: [
+  copper/40
+  metaglass/25
+  titanium/10
+]

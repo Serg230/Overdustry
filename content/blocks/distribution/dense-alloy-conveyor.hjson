@@ -1,0 +1,23 @@
+name: Technetium conveyor
+description: Transports items forward in batches. Accepts items at the back, and unloads them in three directions at the front. Requires multiple loading and unloading points for peak throughput. Can be directly connected to plastanium conveyor.
+type: StackConveyor 
+health: 480
+category: distribution
+research: {
+  parent: plastanium-conveyor
+}
+
+speed: 0.1
+itemCapacity: 10
+splitOut: true
+recharge: 2
+
+loadEffect: plasticburn
+unloadEffect: plasticburn
+
+requirements: [
+  zinc/1
+  silicon/1
+  plastanium/1
+  technetium/1
+]

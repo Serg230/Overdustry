@@ -1,0 +1,37 @@
+name: Spore Greenhouse
+description: Grows tiny concentrations of atmospheric spores into large amount of spore pods. Uses sand as a fertilizer.
+type: AttributeCrafter
+category: production
+health: 360
+size: 3
+research: cultivator
+
+hasLiquids: true
+hasPower: true
+hasItems: true
+itemCapacity: 20
+attribute: spores
+maxBoost: 2
+
+drawer: DrawCultivator
+
+consumes: {
+power: 2
+liquid: water/0.6
+items: {
+items: [
+sand/1
+]
+}
+}
+
+outputItem: spore-pod/3
+craftTime: 120
+
+requirements: [
+copper/80
+lead/90
+zinc/60
+titanium/25
+thorium/25
+]
