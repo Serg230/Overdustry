@@ -1,6 +1,6 @@
 name: Technetium Production Reactor
 type: GenericCrafter
-description: Transforming thorium to technetium through radioactive decay. Generates power in process.
+description: Transforming thorium to technetium through radioactive decay. Requires bromine to operate.
 category: crafting
 research: phase-weaver
 size: 3
